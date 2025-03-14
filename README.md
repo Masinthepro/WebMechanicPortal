@@ -69,6 +69,12 @@ Tested and optimized for:
 - Safari (latest)
 - Edge (latest)
 
+## Offline Support
+
+By default, the website uses CDN resources for libraries like Bootstrap, Font Awesome, and AOS.
+For complete offline functionality, see `static/offline-support.md` for instructions on setting up local
+fallbacks for these external dependencies.
+
 ## License
 
 © 2023-2025 Pro Mechanics. All Rights Reserved.
