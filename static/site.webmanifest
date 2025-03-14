@@ -4,17 +4,17 @@
   "description": "Professional auto repair and mechanic services",
   "icons": [
     {
-      "src": "/static/icons/favicon-16x16.svg",
+      "src": "icons/favicon-16x16.svg",
       "sizes": "16x16",
       "type": "image/svg+xml"
     },
     {
-      "src": "/static/icons/favicon-32x32.svg",
+      "src": "icons/favicon-32x32.svg",
       "sizes": "32x32",
       "type": "image/svg+xml"
     },
     {
-      "src": "/static/icons/apple-touch-icon.svg",
+      "src": "icons/apple-touch-icon.svg",
       "sizes": "180x180",
       "type": "image/svg+xml"
     }
