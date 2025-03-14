@@ -298,6 +298,7 @@ section {
     align-items: center;
     color: var(--light-color);
     overflow: hidden;
+    padding-bottom: 80px; /* Add padding to bottom to ensure content isn't covered by wave */
 }
 
 .hero-overlay {
@@ -337,7 +338,7 @@ section {
     bottom: -1px;
     left: 0;
     width: 100%;
-    z-index: 3;
+    z-index: 2; /* Lower z-index so it doesn't overlap content */
     line-height: 0;
 }
 
@@ -345,7 +346,7 @@ section {
     .hero {
         height: auto;
         min-height: 500px;
-        padding: 100px 0 60px;
+        padding: 100px 0 100px; /* Increased bottom padding for mobile */
     }
     
     .hero-content h1 {
