@@ -1,0 +1,541 @@
+{% extends 'base.html' %}
+
+{% block title %}Pro Mechanics - Expert Auto Repair Services{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-6">
+                <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="display-4 fw-bold mb-4">Professional <span class="text-primary">Auto Repair</span> Services</h1>
+                    <p class="lead mb-5">Expert mechanics, quality parts, and exceptional service to keep your vehicle running smoothly.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="{{ url_for('services') }}" class="btn btn-primary btn-lg">
+                            Our Services
+                            <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                        <a href="{{ url_for('contact') }}" class="btn btn-outline-light btn-lg">
+                            Book Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,197.3C384,181,480,139,576,138.7C672,139,768,181,864,181.3C960,181,1056,139,1152,128C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certified Mechanics</h3>
+                    <p>Our ASE-certified mechanics have years of experience and continuous training.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Quality Parts</h3>
+                    <p>We use only high-quality OEM and aftermarket parts for all repairs.</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Warranty Protection</h3>
+                    <p>All our services come with warranty for your peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                <div class="about-img-wrapper">
+                    <div class="about-experience">
+                        <span class="number">25+</span>
+                        <span class="text">Years of Experience</span>
+                    </div>
+                    <div class="img-bg"></div>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="section-heading mb-4">
+                    <h6 class="text-primary text-uppercase">About Us</h6>
+                    <h2>We're Committed to Providing Quality Auto Repairs</h2>
+                </div>
+                <p class="mb-4">Founded in 1998, Pro Mechanics has been the trusted choice for auto repair and maintenance in Mechanic City. Our team of ASE-certified technicians combines expertise with state-of-the-art equipment to diagnose and fix issues correctly the first time.</p>
+                <div class="row g-4 mb-4">
+                    <div class="col-sm-6">
+                        <div class="about-feature d-flex align-items-center">
+                            <div class="about-feature-icon me-3">
+                                <i class="fas fa-wrench"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Expert Technicians</h5>
+                                <p class="mb-0">ASE-certified mechanics</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="about-feature d-flex align-items-center">
+                            <div class="about-feature-icon me-3">
+                                <i class="fas fa-cog"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Modern Equipment</h5>
+                                <p class="mb-0">Latest diagnostic tools</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="about-feature d-flex align-items-center">
+                            <div class="about-feature-icon me-3">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Timely Service</h5>
+                                <p class="mb-0">Respect for your schedule</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="about-feature d-flex align-items-center">
+                            <div class="about-feature-icon me-3">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Fair Pricing</h5>
+                                <p class="mb-0">Transparent, competitive rates</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="{{ url_for('about') }}" class="btn btn-primary">Learn More About Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-6 text-center">
+                <div class="section-heading" data-aos="fade-up">
+                    <h6 class="text-primary text-uppercase">Our Services</h6>
+                    <h2>Professional Auto Repair Services</h2>
+                    <p>We offer a comprehensive range of automotive services to keep your vehicle in optimal condition.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="{{ url_for('static', filename='svg/engine.svg') }}" alt="Engine Repair">
+                    </div>
+                    <h3>Engine Repair</h3>
+                    <p>Complete engine diagnostics, repair, and rebuilding services for all makes and models.</p>
+                    <a href="{{ url_for('services') }}#engine-repair" class="service-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="{{ url_for('static', filename='svg/brake.svg') }}" alt="Brake Service">
+                    </div>
+                    <h3>Brake Service</h3>
+                    <p>Comprehensive brake inspection, repair, and replacement for optimal safety and performance.</p>
+                    <a href="{{ url_for('services') }}#brake-service" class="service-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="{{ url_for('static', filename='svg/oil.svg') }}" alt="Oil Change">
+                    </div>
+                    <h3>Oil Change</h3>
+                    <p>Regular oil changes with premium quality oils and filters to extend engine life.</p>
+                    <a href="{{ url_for('services') }}#oil-change" class="service-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="{{ url_for('static', filename='svg/tire.svg') }}" alt="Tire Service">
+                    </div>
+                    <h3>Tire Service</h3>
+                    <p>Tire rotation, balancing, alignment, and replacement services for a smooth ride.</p>
+                    <a href="{{ url_for('services') }}#tire-service" class="service-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car-battery"></i>
+                    </div>
+                    <h3>Battery Service</h3>
+                    <p>Battery testing, charging, and replacement services to ensure reliable starting.</p>
+                    <a href="{{ url_for('services') }}#battery-service" class="service-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Complete Diagnostics</h3>
+                    <p>Advanced computer diagnostics to identify and fix issues with precision.</p>
+                    <a href="{{ url_for('services') }}#diagnostics" class="service-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5" data-aos="fade-up">
+            <a href="{{ url_for('services') }}" class="btn btn-primary btn-lg">View All Services</a>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Calculator Section -->
+<section class="calculator-section py-5">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-6 text-center">
+                <div class="section-heading" data-aos="fade-up">
+                    <h6 class="text-primary text-uppercase">Pricing</h6>
+                    <h2>Service Price Calculator</h2>
+                    <p>Get an estimated price for your vehicle service needs with our interactive calculator.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8" data-aos="fade-up">
+                <div class="calculator-card">
+                    <form id="service-calculator-form">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="vehicle-type">Vehicle Type</label>
+                                    <select id="vehicle-type" class="form-select">
+                                        <option value="sedan">Sedan</option>
+                                        <option value="suv">SUV</option>
+                                        <option value="truck">Truck</option>
+                                        <option value="luxury">Luxury</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="service-type">Service Type</label>
+                                    <select id="service-type" class="form-select">
+                                        <option value="oil-change">Oil Change</option>
+                                        <option value="brake-service">Brake Service</option>
+                                        <option value="tire-rotation">Tire Rotation</option>
+                                        <option value="engine-diagnostics">Engine Diagnostics</option>
+                                        <option value="tune-up">Tune-Up</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label>Additional Services</label>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input additional-service" type="checkbox" value="filter-replacement" id="filter-replacement">
+                                                <label class="form-check-label" for="filter-replacement">
+                                                    Filter Replacement
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input additional-service" type="checkbox" value="fluid-top-up" id="fluid-top-up">
+                                                <label class="form-check-label" for="fluid-top-up">
+                                                    Fluid Top-Up
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input additional-service" type="checkbox" value="inspection" id="inspection">
+                                                <label class="form-check-label" for="inspection">
+                                                    General Inspection
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input additional-service" type="checkbox" value="alignment-check" id="alignment-check">
+                                                <label class="form-check-label" for="alignment-check">
+                                                    Alignment Check
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="button" id="calculate-btn" class="btn btn-primary">Calculate Price</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="price-result" class="mt-4 text-center d-none">
+                        <h4>Estimated Price</h4>
+                        <div class="price-amount">
+                            <span id="calculated-price">$0</span>
+                        </div>
+                        <p class="text-muted small">This is an estimate only. Final pricing may vary based on your vehicle's specific needs.</p>
+                        <a href="{{ url_for('contact') }}" class="btn btn-outline-primary mt-3">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-6 text-center">
+                <div class="section-heading" data-aos="fade-up">
+                    <h6 class="text-primary text-uppercase">Testimonials</h6>
+                    <h2>What Our Customers Say</h2>
+                    <p>We take pride in providing exceptional service to our customers. Here's what they have to say about us.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" data-aos="fade-up">
+                <div class="testimonial-slider">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"I've been coming to Pro Mechanics for all my car needs for the past 5 years. Their service is always exceptional, their prices fair, and their mechanics knowledgeable. I wouldn't trust my car with anyone else!"</p>
+                                    <div class="testimonial-author d-flex align-items-center">
+                                        <div class="testimonial-avatar">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-0">Michael Johnson</h5>
+                                            <p class="mb-0 text-muted">Regular Customer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"I was having issues with my car's transmission and had visited several shops without any luck. The team at Pro Mechanics diagnosed the problem accurately and fixed it at a reasonable price. They've earned a customer for life!"</p>
+                                    <div class="testimonial-author d-flex align-items-center">
+                                        <div class="testimonial-avatar">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-0">Sarah Williams</h5>
+                                            <p class="mb-0 text-muted">New Customer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <p class="testimonial-text">"Pro Mechanics has serviced my family's vehicles for over a decade. Their attention to detail, honesty, and professionalism sets them apart from other auto shops. The mechanics take the time to explain issues and never pressure you into unnecessary repairs."</p>
+                                    <div class="testimonial-author d-flex align-items-center">
+                                        <div class="testimonial-avatar">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-0">Robert Davis</h5>
+                                            <p class="mb-0 text-muted">Loyal Customer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 text-center text-lg-start mb-4 mb-lg-0" data-aos="fade-right">
+                <h2 class="text-white mb-2">Need Professional Auto Repair Services?</h2>
+                <p class="text-white-50 mb-0">Contact us today to schedule an appointment or learn more about our services.</p>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end" data-aos="fade-left">
+                <a href="{{ url_for('contact') }}" class="btn btn-light btn-lg">Get In Touch</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Location Section -->
+<section class="location py-5">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-6 text-center">
+                <div class="section-heading" data-aos="fade-up">
+                    <h6 class="text-primary text-uppercase">Location</h6>
+                    <h2>Find Us</h2>
+                    <p>We're conveniently located in the heart of Mechanic City. Visit us today!</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                <div class="location-info">
+                    <h3>Our Address</h3>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> 123 Repair Street, Mechanic City, MC 12345</p>
+                    <h3>Business Hours</h3>
+                    <ul class="list-unstyled">
+                        <li><strong>Monday - Friday:</strong> 8:00 AM - 6:00 PM</li>
+                        <li><strong>Saturday:</strong> 9:00 AM - 4:00 PM</li>
+                        <li><strong>Sunday:</strong> Closed</li>
+                    </ul>
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone-alt me-2"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope me-2"></i> info@promechanics.com</p>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="location-map">
+                    <!-- Placeholder for a map -->
+                    <div class="map-placeholder d-flex align-items-center justify-content-center text-center">
+                        <div>
+                            <i class="fas fa-map-marked-alt fa-4x mb-3"></i>
+                            <h4 class="mb-3">Map Location</h4>
+                            <p class="mb-3">This would display an interactive map in a real implementation.</p>
+                            <a href="https://maps.google.com" target="_blank" class="btn btn-primary">Open in Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Appointment Section -->
+<section class="appointment-section py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="appointment-card" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-lg-6 appointment-info">
+                            <h2>Schedule Your Service</h2>
+                            <p>Make an appointment for your vehicle service today. Our team will get back to you promptly to confirm your booking.</p>
+                            <div class="appointment-contact mt-4">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="contact-icon me-3">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">Call Us</h5>
+                                        <p class="mb-0">(555) 123-4567</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="contact-icon me-3">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0">Email Us</h5>
+                                        <p class="mb-0">info@promechanics.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 appointment-form-col">
+                            <form action="{{ url_for('contact') }}" method="post" class="appointment-form">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" placeholder="Your Phone" name="phone" required>
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select" name="service" required>
+                                        <option value="" selected disabled>Select Service</option>
+                                        <option value="oil-change">Oil Change</option>
+                                        <option value="brake-service">Brake Service</option>
+                                        <option value="engine-repair">Engine Repair</option>
+                                        <option value="tire-service">Tire Service</option>
+                                        <option value="battery-service">Battery Service</option>
+                                        <option value="diagnostics">Diagnostics</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="3" placeholder="Message" name="message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Book Appointment</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/service-calculator.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,410 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us - Pro Mechanics{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>About Us</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                <div class="about-img-wrapper">
+                    <div class="about-experience">
+                        <span class="number">25+</span>
+                        <span class="text">Years of Experience</span>
+                    </div>
+                    <div class="img-bg about-main-img"></div>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="section-heading mb-4">
+                    <h6 class="text-primary text-uppercase">Our Story</h6>
+                    <h2>A Tradition of Excellence in Auto Repair</h2>
+                </div>
+                <p class="mb-4">Founded in 1998 by Master Mechanic John Anderson, Pro Mechanics began as a small, family-owned shop dedicated to providing honest, high-quality auto repair services. With a passion for automobiles and a commitment to exceptional customer service, John quickly built a reputation for reliability and expertise in the community.</p>
+                <p class="mb-4">Over the past 25 years, we've grown from a two-bay garage to our current state-of-the-art facility with ten service bays, advanced diagnostic equipment, and a team of ASE-certified technicians. Throughout our growth, we've maintained our founding principles of honesty, quality workmanship, and fair pricing.</p>
+                <p class="mb-4">Today, Pro Mechanics is proud to be the trusted choice for auto repair and maintenance for thousands of customers in the Mechanic City area. Whether you're dealing with a complex engine issue or just need routine maintenance, our team is committed to keeping your vehicle running at its best.</p>
+                <div class="about-signature mb-4">
+                    <strong>John Anderson</strong><br>
+                    Founder & Master Mechanic
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission Section -->
+<section class="mission-section py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                <div class="section-heading mb-4">
+                    <h6 class="text-primary text-uppercase">Our Mission</h6>
+                    <h2>Why Choose Pro Mechanics?</h2>
+                </div>
+                <p class="mb-4">At Pro Mechanics, our mission is simple: to provide honest, high-quality auto repair services at fair prices. We believe in treating every customer's vehicle as if it were our own, recommending only the services you truly need and completing repairs with precision and care.</p>
+                <ul class="mission-list">
+                    <li>
+                        <div class="icon"><i class="fas fa-check-circle"></i></div>
+                        <div class="content">
+                            <h5>Honest Service</h5>
+                            <p>We build trust through transparency. We'll always explain what your vehicle needs, why it needs it, and provide upfront pricing without hidden fees.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon"><i class="fas fa-check-circle"></i></div>
+                        <div class="content">
+                            <h5>Quality Workmanship</h5>
+                            <p>Our ASE-certified technicians have the skills, experience, and training to diagnose and fix problems correctly the first time.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon"><i class="fas fa-check-circle"></i></div>
+                        <div class="content">
+                            <h5>Fair Pricing</h5>
+                            <p>We provide competitive pricing without compromising on quality. No unnecessary upsells or surprise charges.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="mission-image-wrapper">
+                    <div class="mission-image mission-workshop-img"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="team-section py-5">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-6 text-center">
+                <div class="section-heading" data-aos="fade-up">
+                    <h6 class="text-primary text-uppercase">Our Team</h6>
+                    <h2>Meet Our Expert Technicians</h2>
+                    <p>Our team of ASE-certified mechanics brings decades of combined experience and a passion for quality service.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-card">
+                    <div class="team-img">
+                        <div class="team-img-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>John Anderson</h4>
+                        <p class="team-position">Founder & Master Mechanic</p>
+                        <p class="team-desc">With over 30 years of experience, John specializes in complex engine repairs and diagnostics.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="team-card">
+                    <div class="team-img">
+                        <div class="team-img-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Sarah Johnson</h4>
+                        <p class="team-position">Master Technician</p>
+                        <p class="team-desc">ASE-certified with 15 years of experience, Sarah excels in electrical systems and diagnostics.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="team-card">
+                    <div class="team-img">
+                        <div class="team-img-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Michael Torres</h4>
+                        <p class="team-position">Brake & Suspension Specialist</p>
+                        <p class="team-desc">With 12 years of specialized experience, Michael ensures your vehicle's safety systems are in top condition.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="team-card">
+                    <div class="team-img">
+                        <div class="team-img-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>David Lee</h4>
+                        <p class="team-position">Engine Performance Expert</p>
+                        <p class="team-desc">ASE-certified with 10 years of experience, David specializes in engine performance and fuel systems.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certifications Section -->
+<section class="certifications-section py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-6 text-center">
+                <div class="section-heading" data-aos="fade-up">
+                    <h6 class="text-primary text-uppercase">Credentials</h6>
+                    <h2>Our Certifications & Affiliations</h2>
+                    <p>We invest in ongoing training and certifications to ensure our team stays current with the latest automotive technologies and repair techniques.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="row g-4 text-center">
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="certification-card">
+                            <div class="certification-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h4>ASE Certified</h4>
+                            <p>Our technicians are certified by the National Institute for Automotive Service Excellence, demonstrating their expertise and commitment to excellence.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="certification-card">
+                            <div class="certification-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h4>AAA Approved</h4>
+                            <p>We meet AAA's strict standards for technical competence, customer service, appearance, and business practices.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="certification-card">
+                            <div class="certification-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h4>NAPA AutoCare Center</h4>
+                            <p>As a NAPA AutoCare Center, we provide high-quality parts and back our repairs with a nationwide warranty.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- History Timeline -->
+<section class="timeline-section py-5">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-6 text-center">
+                <div class="section-heading" data-aos="fade-up">
+                    <h6 class="text-primary text-uppercase">Our Journey</h6>
+                    <h2>25 Years of Growth & Excellence</h2>
+                    <p>Follow our journey from a small family shop to a leading auto repair facility.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="timeline" data-aos="fade-up">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>1998</h4>
+                            <p>Pro Mechanics founded by John Anderson as a two-bay garage focusing on general auto repair.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2003</h4>
+                            <p>Expanded to a five-bay facility and introduced specialized diagnostic equipment to better serve our growing customer base.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2008</h4>
+                            <p>Achieved ASE Blue Seal of Excellence recognition, demonstrating our commitment to employing certified technicians.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2013</h4>
+                            <p>Opened our current state-of-the-art facility with ten service bays and a comfortable customer lounge.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2018</h4>
+                            <p>Celebrated 20 years in business and introduced eco-friendly practices including recycling and energy-efficient equipment.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2023</h4>
+                            <p>Marking 25 years of service with the launch of our digital appointment system and expanded services for hybrid and electric vehicles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-6 text-center">
+                <div class="section-heading" data-aos="fade-up">
+                    <h6 class="text-primary text-uppercase">Testimonials</h6>
+                    <h2>What Our Customers Say</h2>
+                    <p>The trust of our customers means everything to us. Here's what they have to say about their experiences.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" data-aos="fade-up">
+                <div class="testimonial-slider">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"I've been a customer of Pro Mechanics for over 15 years, and they've never let me down. What I appreciate most is their honesty—they only recommend what's truly needed and explain everything clearly. My family's fleet of vehicles is always in good hands with John and his team."</p>
+                                    <div class="testimonial-author d-flex align-items-center">
+                                        <div class="testimonial-avatar">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-0">Robert Garcia</h5>
+                                            <p class="mb-0 text-muted">Loyal Customer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="testimonial-text">"When my daughter started college, I wanted to make sure her car was reliable and safe. The team at Pro Mechanics did a comprehensive inspection and addressed all potential issues. Three years later, her car is still running perfectly, and I have peace of mind knowing she's driving a well-maintained vehicle."</p>
+                                    <div class="testimonial-author d-flex align-items-center">
+                                        <div class="testimonial-avatar">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-0">Linda Morrison</h5>
+                                            <p class="mb-0 text-muted">Satisfied Parent</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <p class="testimonial-text">"As a small business owner with a fleet of delivery vehicles, I need a mechanic I can trust to keep my business moving. Pro Mechanics has been a true partner in maintaining our vehicles, preventing breakdowns, and keeping costs predictable. Their preventative maintenance program has saved us thousands in potential repair costs."</p>
+                                    <div class="testimonial-author d-flex align-items-center">
+                                        <div class="testimonial-avatar">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div>
+                                            <h5 class="mb-0">Mark Williams</h5>
+                                            <p class="mb-0 text-muted">Business Owner</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 text-center text-lg-start mb-4 mb-lg-0" data-aos="fade-right">
+                <h2 class="text-white mb-2">Ready to Experience the Pro Mechanics Difference?</h2>
+                <p class="text-white-50 mb-0">Contact us today to schedule an appointment or learn more about our services.</p>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end" data-aos="fade-left">
+                <a href="{{ url_for('contact') }}" class="btn btn-light btn-lg">Get Started</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

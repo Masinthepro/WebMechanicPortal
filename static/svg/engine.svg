@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Engine Block -->
+  <rect x="20" y="35" width="60" height="35" fill="#4A4A4A" rx="2" ry="2"/>
+  
+  <!-- Engine Top with Valve Cover -->
+  <rect x="15" y="25" width="70" height="10" fill="#2D3436" rx="3" ry="3"/>
+  <rect x="18" y="27" width="64" height="6" fill="#1A1A1A" rx="2" ry="2"/>
+  
+  <!-- Bolts on Valve Cover -->
+  <circle cx="25" cy="30" r="1.5" fill="#FF5722"/>
+  <circle cx="35" cy="30" r="1.5" fill="#FF5722"/>
+  <circle cx="45" cy="30" r="1.5" fill="#FF5722"/>
+  <circle cx="55" cy="30" r="1.5" fill="#FF5722"/>
+  <circle cx="65" cy="30" r="1.5" fill="#FF5722"/>
+  <circle cx="75" cy="30" r="1.5" fill="#FF5722"/>
+  
+  <!-- Intake Manifold -->
+  <path d="M10,45 h10 v-10 h10 v10 h-10 z" fill="#3A3A3A"/>
+  <rect x="12" y="38" width="6" height="5" fill="#2A2A2A" rx="1" ry="1"/>
+  
+  <!-- Exhaust Manifold -->
+  <path d="M80,45 h10 v-10 h-10 v10 z" fill="#3A3A3A"/>
+  <path d="M85,35 v-5 h5" fill="none" stroke="#2A2A2A" stroke-width="2"/>
+  
+  <!-- Oil Pan -->
+  <path d="M25,70 h50 v5 a5,5 0 0 1 -5,5 h-40 a5,5 0 0 1 -5,-5 z" fill="#333333"/>
+  <line x1="25" y1="70" x2="75" y2="70" stroke="#2A2A2A" stroke-width="1"/>
+  
+  <!-- Spark Plug Wires -->
+  <line x1="30" y1="25" x2="30" y2="15" stroke="#FF5722" stroke-width="2"/>
+  <line x1="40" y1="25" x2="40" y2="15" stroke="#FF5722" stroke-width="2"/>
+  <line x1="50" y1="25" x2="50" y2="15" stroke="#FF5722" stroke-width="2"/>
+  <line x1="60" y1="25" x2="60" y2="15" stroke="#FF5722" stroke-width="2"/>
+  <line x1="70" y1="25" x2="70" y2="15" stroke="#FF5722" stroke-width="2"/>
+  
+  <!-- Accessories -->
+  <circle cx="15" cy="60" r="5" fill="#666666"/>
+  <circle cx="15" cy="60" r="2" fill="#444444"/>
+  
+  <circle cx="85" cy="60" r="5" fill="#666666"/>
+  <circle cx="85" cy="60" r="2" fill="#444444"/>
+  
+  <!-- Radiator Hose Connection -->
+  <path d="M15,45 c-5,0 -5,10 0,10" fill="none" stroke="#333333" stroke-width="3"/>
+  
+  <!-- Details and Highlights -->
+  <rect x="25" y="40" width="50" height="25" fill="none" stroke="#555555" stroke-width="0.5" rx="1" ry="1"/>
+</svg>

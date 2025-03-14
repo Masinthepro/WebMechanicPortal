@@ -1,0 +1,485 @@
+{% extends 'base.html' %}
+
+{% block title %}Auto Repair Services - Pro Mechanics{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Our Services</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{{ url_for('index') }}">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Services</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Overview -->
+<section class="services-overview py-5">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center">
+                <div class="section-heading" data-aos="fade-up">
+                    <h6 class="text-primary text-uppercase">What We Offer</h6>
+                    <h2>Comprehensive Auto Repair Services</h2>
+                    <p>At Pro Mechanics, we offer a full range of automotive repair and maintenance services to keep your vehicle running at its best. Our team of certified mechanics uses the latest tools and technologies to diagnose and fix issues quickly and accurately.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Detail -->
+<section class="services-detail py-5 bg-light">
+    <div class="container">
+        <!-- Engine Repair -->
+        <div id="engine-repair" class="service-item mb-5" data-aos="fade-up">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="service-image">
+                        <div class="service-icon-overlay">
+                            <img src="{{ url_for('static', filename='svg/engine.svg') }}" alt="Engine Repair">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-content">
+                        <h3>Engine Repair & Maintenance</h3>
+                        <p>Our certified technicians are experienced in diagnosing and repairing engine issues for all makes and models. We use state-of-the-art diagnostic equipment to identify problems accurately and efficiently.</p>
+                        <h5>Our Engine Services Include:</h5>
+                        <ul>
+                            <li>Complete engine diagnostics</li>
+                            <li>Check engine light diagnosis</li>
+                            <li>Engine performance testing</li>
+                            <li>Engine repair and rebuilding</li>
+                            <li>Timing belt replacement</li>
+                            <li>Engine tune-ups</li>
+                            <li>Cooling system service</li>
+                        </ul>
+                        <div class="service-cta">
+                            <a href="{{ url_for('contact') }}" class="btn btn-primary">Schedule Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brake Service -->
+        <div id="brake-service" class="service-item mb-5" data-aos="fade-up">
+            <div class="row align-items-center flex-lg-row-reverse">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="service-image">
+                        <div class="service-icon-overlay">
+                            <img src="{{ url_for('static', filename='svg/brake.svg') }}" alt="Brake Service">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-content">
+                        <h3>Brake Service & Repair</h3>
+                        <p>Your vehicle's brakes are its most important safety feature. Our comprehensive brake service ensures your braking system is functioning properly for optimal safety and performance.</p>
+                        <h5>Our Brake Services Include:</h5>
+                        <ul>
+                            <li>Brake system inspection</li>
+                            <li>Brake pad and shoe replacement</li>
+                            <li>Brake rotor and drum resurfacing</li>
+                            <li>Brake fluid flush</li>
+                            <li>ABS system diagnostics and repair</li>
+                            <li>Brake line inspection and replacement</li>
+                            <li>Emergency brake adjustment</li>
+                        </ul>
+                        <div class="service-cta">
+                            <a href="{{ url_for('contact') }}" class="btn btn-primary">Schedule Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Oil Change -->
+        <div id="oil-change" class="service-item mb-5" data-aos="fade-up">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="service-image">
+                        <div class="service-icon-overlay">
+                            <img src="{{ url_for('static', filename='svg/oil.svg') }}" alt="Oil Change">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-content">
+                        <h3>Oil Change & Fluid Services</h3>
+                        <p>Regular oil changes are essential for maintaining your engine's performance and longevity. Our professional oil change service includes a comprehensive vehicle inspection to catch potential issues early.</p>
+                        <h5>Our Oil & Fluid Services Include:</h5>
+                        <ul>
+                            <li>Conventional, synthetic blend, and full synthetic oil options</li>
+                            <li>Oil filter replacement</li>
+                            <li>Multi-point vehicle inspection</li>
+                            <li>Transmission fluid service</li>
+                            <li>Coolant flush and replacement</li>
+                            <li>Power steering fluid service</li>
+                            <li>Brake fluid flush</li>
+                        </ul>
+                        <div class="service-cta">
+                            <a href="{{ url_for('contact') }}" class="btn btn-primary">Schedule Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tire Service -->
+        <div id="tire-service" class="service-item mb-5" data-aos="fade-up">
+            <div class="row align-items-center flex-lg-row-reverse">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="service-image">
+                        <div class="service-icon-overlay">
+                            <img src="{{ url_for('static', filename='svg/tire.svg') }}" alt="Tire Service">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-content">
+                        <h3>Tire Service & Wheel Alignment</h3>
+                        <p>Proper tire maintenance is crucial for safety, fuel efficiency, and overall vehicle performance. Our tire services ensure your tires are in optimal condition for a smooth and safe ride.</p>
+                        <h5>Our Tire Services Include:</h5>
+                        <ul>
+                            <li>Tire rotation and balancing</li>
+                            <li>Wheel alignment</li>
+                            <li>Tire pressure monitoring</li>
+                            <li>Tire repairs</li>
+                            <li>New tire sales and installation</li>
+                            <li>Seasonal tire changeover</li>
+                            <li>Tire inspection and evaluation</li>
+                        </ul>
+                        <div class="service-cta">
+                            <a href="{{ url_for('contact') }}" class="btn btn-primary">Schedule Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Battery Service -->
+        <div id="battery-service" class="service-item mb-5" data-aos="fade-up">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="service-image">
+                        <div class="service-icon-overlay">
+                            <i class="fas fa-car-battery fa-4x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-content">
+                        <h3>Battery & Electrical Services</h3>
+                        <p>A properly functioning electrical system is essential for your vehicle's reliability. Our battery and electrical services ensure your vehicle starts consistently and all electrical components work correctly.</p>
+                        <h5>Our Battery & Electrical Services Include:</h5>
+                        <ul>
+                            <li>Battery testing and inspection</li>
+                            <li>Battery replacement</li>
+                            <li>Alternator and starter testing</li>
+                            <li>Alternator and starter replacement</li>
+                            <li>Electrical system diagnostics</li>
+                            <li>Lighting system repair</li>
+                            <li>Fuse and relay replacement</li>
+                        </ul>
+                        <div class="service-cta">
+                            <a href="{{ url_for('contact') }}" class="btn btn-primary">Schedule Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diagnostics -->
+        <div id="diagnostics" class="service-item" data-aos="fade-up">
+            <div class="row align-items-center flex-lg-row-reverse">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="service-image">
+                        <div class="service-icon-overlay">
+                            <i class="fas fa-car fa-4x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-content">
+                        <h3>Computer Diagnostics</h3>
+                        <p>Modern vehicles rely on complex computer systems to operate efficiently. Our advanced diagnostic equipment can identify issues with precision, saving you time and money on repairs.</p>
+                        <h5>Our Diagnostic Services Include:</h5>
+                        <ul>
+                            <li>Check engine light diagnostics</li>
+                            <li>Computer system scanning</li>
+                            <li>Performance testing</li>
+                            <li>Emission system diagnostics</li>
+                            <li>Electronic component testing</li>
+                            <li>Sensor testing and replacement</li>
+                            <li>Complete vehicle inspection</li>
+                        </ul>
+                        <div class="service-cta">
+                            <a href="{{ url_for('contact') }}" class="btn btn-primary">Schedule Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Process -->
+<section class="service-process py-5">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-6 text-center">
+                <div class="section-heading" data-aos="fade-up">
+                    <h6 class="text-primary text-uppercase">Our Process</h6>
+                    <h2>How We Work</h2>
+                    <p>Our streamlined service process is designed to make your experience convenient and transparent.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+                <div class="process-card">
+                    <div class="process-icon">
+                        <span class="process-number">1</span>
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h4>Schedule</h4>
+                    <p>Call us or book online to schedule your service appointment at a time that works for you.</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="200">
+                <div class="process-card">
+                    <div class="process-icon">
+                        <span class="process-number">2</span>
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h4>Diagnose</h4>
+                    <p>Our certified technicians will perform a thorough inspection to diagnose any issues.</p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
+                <div class="process-card">
+                    <div class="process-icon">
+                        <span class="process-number">3</span>
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h4>Repair</h4>
+                    <p>We'll complete the necessary repairs using quality parts and skilled workmanship.</p>
+                </div>
+            </div>
+            <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                <div class="process-card">
+                    <div class="process-icon">
+                        <span class="process-number">4</span>
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h4>Return</h4>
+                    <p>Your vehicle is returned to you in optimal condition with detailed service explanation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Calculator Section -->
+<section class="calculator-section py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-6 text-center">
+                <div class="section-heading" data-aos="fade-up">
+                    <h6 class="text-primary text-uppercase">Pricing</h6>
+                    <h2>Service Price Calculator</h2>
+                    <p>Get an estimated price for your vehicle service needs with our interactive calculator.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8" data-aos="fade-up">
+                <div class="calculator-card">
+                    <form id="service-calculator-form">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="vehicle-type">Vehicle Type</label>
+                                    <select id="vehicle-type" class="form-select">
+                                        <option value="sedan">Sedan</option>
+                                        <option value="suv">SUV</option>
+                                        <option value="truck">Truck</option>
+                                        <option value="luxury">Luxury</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="service-type">Service Type</label>
+                                    <select id="service-type" class="form-select">
+                                        <option value="oil-change">Oil Change</option>
+                                        <option value="brake-service">Brake Service</option>
+                                        <option value="tire-rotation">Tire Rotation</option>
+                                        <option value="engine-diagnostics">Engine Diagnostics</option>
+                                        <option value="tune-up">Tune-Up</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label>Additional Services</label>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input additional-service" type="checkbox" value="filter-replacement" id="filter-replacement">
+                                                <label class="form-check-label" for="filter-replacement">
+                                                    Filter Replacement
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input additional-service" type="checkbox" value="fluid-top-up" id="fluid-top-up">
+                                                <label class="form-check-label" for="fluid-top-up">
+                                                    Fluid Top-Up
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-check">
+                                                <input class="form-check-input additional-service" type="checkbox" value="inspection" id="inspection">
+                                                <label class="form-check-label" for="inspection">
+                                                    General Inspection
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input additional-service" type="checkbox" value="alignment-check" id="alignment-check">
+                                                <label class="form-check-label" for="alignment-check">
+                                                    Alignment Check
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="button" id="calculate-btn" class="btn btn-primary">Calculate Price</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="price-result" class="mt-4 text-center d-none">
+                        <h4>Estimated Price</h4>
+                        <div class="price-amount">
+                            <span id="calculated-price">$0</span>
+                        </div>
+                        <p class="text-muted small">This is an estimate only. Final pricing may vary based on your vehicle's specific needs.</p>
+                        <a href="{{ url_for('contact') }}" class="btn btn-outline-primary mt-3">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section py-5">
+    <div class="container">
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-6 text-center">
+                <div class="section-heading" data-aos="fade-up">
+                    <h6 class="text-primary text-uppercase">FAQ</h6>
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Find answers to common questions about our services and auto repair in general.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10" data-aos="fade-up">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                How often should I change my oil?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>For most vehicles, we recommend changing the oil every 5,000 to 7,500 miles for conventional oil and every 7,500 to 10,000 miles for synthetic oil. However, this can vary based on your vehicle type, driving conditions, and manufacturer recommendations. Check your owner's manual for specific guidance or consult with our technicians.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                What should I do if my check engine light comes on?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>If your check engine light comes on, it's important to have your vehicle diagnosed as soon as possible. While it doesn't always indicate a serious problem, ignoring the warning could lead to more extensive damage. Our diagnostic equipment can quickly identify the cause of the check engine light, allowing us to address the issue promptly.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                How often should I replace my brakes?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>Brake pad replacement intervals vary depending on your driving habits, vehicle type, and the quality of the brake pads. On average, brake pads need to be replaced every 30,000 to 70,000 miles. Warning signs that your brakes need attention include squeaking or grinding noises when braking, a vibrating brake pedal, or the brake warning light appearing on your dashboard.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                How do I know if my tires need to be replaced?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>Tires should be replaced when the tread depth reaches 2/32 of an inch. You can check this using the penny test: insert a penny with Lincoln's head upside down into the tread. If you can see all of Lincoln's head, it's time for new tires. Other signs include uneven wear, bulges or cracks in the sidewall, and excessive vibration while driving. We recommend having your tires inspected regularly during routine maintenance visits.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Do you offer warranties on your repairs?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                <p>Yes, we stand behind our work. We offer a 24-month/24,000-mile warranty on parts and labor for most repairs. Some specialized services and parts may have different warranty terms, which will be clearly communicated before any work begins. Our goal is to provide you with quality repairs and peace of mind.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 text-center text-lg-start mb-4 mb-lg-0" data-aos="fade-right">
+                <h2 class="text-white mb-2">Ready to Schedule Your Service?</h2>
+                <p class="text-white-50 mb-0">Contact us today to book an appointment or learn more about our services.</p>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end" data-aos="fade-left">
+                <a href="{{ url_for('contact') }}" class="btn btn-light btn-lg">Book Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/service-calculator.js') }}"></script>
+{% endblock %}
