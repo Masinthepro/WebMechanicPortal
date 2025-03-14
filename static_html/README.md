@@ -10,7 +10,10 @@ This folder contains standalone HTML files that can be opened directly in your b
 ## Available Pages
 
 - `index.html` - Home page
-- (Other pages will be added as they are completed)
+- `services.html` - Services page
+- `about.html` - About Us page
+- `contact.html` - Contact page
+- `gallery.html` - Gallery page
 
 ## Notes
 
