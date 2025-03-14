@@ -78,10 +78,10 @@ fallbacks for these external dependencies.
 ## Static HTML Version
 
 For direct file viewing without running a server:
-- Static HTML files are available in the `static_html` folder
+- Static HTML files (index.html, services.html, about.html, contact.html, gallery.html) are available in the root directory
 - These can be opened directly in a browser without running Flask
 - All assets use relative paths that work when viewing from a file system
-- See `static_html/README.md` for more details
+- Simply double-click any HTML file to view it in your browser
 
 ## License
 
