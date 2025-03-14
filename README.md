@@ -75,6 +75,14 @@ By default, the website uses CDN resources for libraries like Bootstrap, Font Aw
 For complete offline functionality, see `static/offline-support.md` for instructions on setting up local
 fallbacks for these external dependencies.
 
+## Static HTML Version
+
+For direct file viewing without running a server:
+- Static HTML files are available in the `static_html` folder
+- These can be opened directly in a browser without running Flask
+- All assets use relative paths that work when viewing from a file system
+- See `static_html/README.md` for more details
+
 ## License
 
 © 2023-2025 Pro Mechanics. All Rights Reserved.
